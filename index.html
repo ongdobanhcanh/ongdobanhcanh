@@ -17,13 +17,13 @@
 <body style="color: #8c989e;">
     <nav class="navbar navbar-light navbar-expand-md" style="background-color: #ffffff; z-index: 10;">
         <div class="container-fluid" style="max-height: 60px;">
-            <img class="navbar-brand d-flex d-xl-flex col-2" src="assets/img/logo.jpg">
+            <div class="navbar-brand d-flex d-xl-flex col-2" style="background: url('assets/img/bg-masthead.jpg')no-repeat center center;background-size: cover;background-image: url(&quot;assets/img/logo.jpg&quot;); height: 65px;"> </div>
             <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1" style="margin: auto;/*max-width: 500px;*/width: 100%;">
                     <ul class="nav navbar-nav ml-auto" style="width:fit-content; background-color: #fff;">
-                        <li class="nav-item" role="presentation" style="margin:5px;"><a class="nav-link" href="scholarship_list.html" style="color: #e46d3c; font-weight: bold;">Sản phẩm</a></li>
-                        <li class="nav-item" role="presentation" style="margin:5px;"><a class="nav-link" href="scholarship_fav.html" style="color: #e46d3c;font-weight: bold;">Cách làm bánh</a></li>
-                        <li class="nav-item" role="presentation" style="margin:5px;"><a class="nav-link" href="personal.html" style="color: #e46d3c;font-weight: bold;">Về chúng tôi</a></li>
+                        <li class="nav-item" role="presentation" style="margin:5px;"><a class="nav-link" href="#product-card" style="color: #e46d3c; font-weight: bold;">Sản phẩm</a></li>
+                        <li class="nav-item" role="presentation" style="margin:5px;"><a class="nav-link" href="#receipt-card" style="color: #e46d3c;font-weight: bold;">Cách làm bánh</a></li>
+                        <li class="nav-item" role="presentation" style="margin:5px;"><a class="nav-link" href="#about-us-card" style="color: #e46d3c;font-weight: bold;">Về chúng tôi</a></li>
                     </ul>
                 </div>
         </div>
@@ -41,38 +41,92 @@
         </div>
     </header>
     <section class="showcase" style="background-color: #f0f0f0;">
-        <div class="container-fluid d-xl-flex justify-content-xl-center p-0">
-            <div class="row row-body" style="padding: 30px;">
-                <div class="col" style="background-color: #ffffff;margin: 10px;box-shadow: -2px 1px 18px -5px rgba(0,0,0,0.1) !important;width: 100%;float: left;display: block;background: #fff !important;padding: 25px !important;border-radius: 13px !important;transition: .25s ease;border: 1px solid#dfdfdf;margin-bottom: 45px !important;">
-                    <div>
-                        <div class="col-md-12 feature-box" style="margin-top: 10px;margin-bottom: 30px;color: #e46d3c;">
-                            <div style="box-shadow: 0px 2px; width: fit-content;">
-                                <strong style="font-size: 25px;">Về chúng tôi</strong>
+        <div class="container-fluid d-flex flex-column justify-content-center p-0" style="align-items: center;">
+            <div class="row" id="product-card" style="padding: 30px; max-width: 758px;">
+                <div class="col-md-12 feature-box" style="margin-top: 10px;margin-bottom: 20px;color: #e46d3c;">
+                    <div style="box-shadow: 0px 2px; width: fit-content;">
+                        <strong style="font-size: 25px;">Sản phẩm</strong>
+                    </div>
+                </div>
+                <div class="col" style="background-color: #ffffff;margin: 10px;box-shadow: -2px 1px 18px -5px rgba(0,0,0,0.1) !important;width: 100%;float: left;display: block;background: #fff !important;padding: 25px !important;border-radius: 13px !important;transition: .25s ease;border: 1px solid#dfdfdf;">
+                    <div class="row d-flex justify-content-center" style="padding: 20px;">
+                        <div class="card" style="width: 18rem; margin: 10px;">
+                            <div class="card-img-top" style="height: 325px; background-size: cover;background-image: url(&quot;assets/img/item.jpg&quot;);"> </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Bánh canh loại 300 gram</h5>
+                              <p class="card-text">10.000 VND</p>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-center" style="padding: 20px;">
-                            <div class="col-auto d-xl-flex align-items-xl-center" style="padding: 0px;"><img src="assets/img/logo-uit.png" style="width: 100px;height: 90px;margin: 10px;"></div>
-                            <div class="col" style="line-height: 1.4em;">
-                                <div class="row">
-                                    <div class="col"><span style="font-weight: 700;color: #1c374f;">University of Information technology</span></div>
-                                </div><br>
-                                <div class="row">
-                                    <div class="col">
-                                        <p style="font-size: 14px;color: rgb(140, 152, 158);;">VNUHCM-University of Information Technology is a public university located in Ho Chi Minh City, Vietnam</p>
-                                    </div>
+                        <div class="card" style="width: 18rem; margin: 10px;">
+                            <div class="card-img-top" style="height: 325px; background-size: cover;background-image: url(&quot;assets/img/item2.jpg&quot;);"> </div>
+                            <div class="card-body">
+                              <h5 class="card-title">Bánh canh loại 500 gram</h5>
+                              <p class="card-text">15.000 VND</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="receipt-card" style="padding: 0px 30px 30px 30px; max-width: 758px;">
+                <div class="col-md-12 feature-box" style="margin-top: 10px;margin-bottom: 20px;color: #e46d3c;">
+                    <div style="box-shadow: 0px 2px; width: fit-content;">
+                        <strong style="font-size: 25px;">Cách làm bánh</strong>
+                    </div>
+                </div>
+                <div class="col" style="background-color: #ffffff;margin: 10px;box-shadow: -2px 1px 18px -5px rgba(0,0,0,0.1) !important;width: 100%;float: left;display: block;border-radius: 13px;transition: .25s ease;border: 1px solid#dfdfdf;">
+                    <div class="row d-flex justify-content-center" style="padding: 0px 20px 20px 20px;">
+                        <div class="col" style="line-height: 1.4em;">
+                            <div class="embed-responsive embed-responsive-4by3" style="text-align: center;">
+                                <video width="500" controls>
+                                    <source src="assets/video/item.mp4" type="video/mp4">
+                                    Your browser does not support HTML video.
+                                </video>
+                            </div>
+                            <div class="row">
+                                <div style="padding: 15px;">
+                                    <p style="font-size: 14px;color: rgb(140, 152, 158);">Bước 1: Cần chuẩn bị một nồi nước sôi.</p>
+                                    <p style="font-size: 14px;color: rgb(140, 152, 158);">Bước 2: Bỏ bột bánh canh khô vào nấu sôi và giảm nhỏ lửa, đợi trong vòng 7 phút đến 9 phút.</p>
+                                    <p style="font-size: 14px;color: rgb(140, 152, 158);">Bước 3: Vớt sợi bánh canh ra rồi xả qua nước lạnh (để tránh tình trạng sợi bột nóng bị dính vào nhau).</p>
+                                    <p style="font-size: 14px;color: rgb(140, 152, 158);">Bước 4: Sợi bánh canh đã sẵn sàng để chế biến các món ăn khác nhau.</p>
                                 </div>
                             </div>
                         </div>
-                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="about-us-card" style="padding: 0px 30px 30px 30px; max-width: 758px;">
+                <div class="col-md-12 feature-box" style="margin-top: 10px;margin-bottom: 20px;color: #e46d3c;">
+                    <div style="box-shadow: 0px 2px; width: fit-content;">
+                        <strong style="font-size: 25px;">Về chúng tôi</strong>
+                    </div>
+                </div>
+                <div class="col" style="background-color: #ffffff;margin: 10px;box-shadow: -2px 1px 18px -5px rgba(0,0,0,0.1) !important;width: 100%;float: left;display: block;background: #fff !important;padding: 25px !important;border-radius: 13px !important;transition: .25s ease;border: 1px solid#dfdfdf;margin-bottom: 45px !important;">
+                    <div class="row d-flex justify-content-center" style="padding: 20px;">
+                        <div class="col-auto d-xl-flex align-items-xl-center" style="padding: 0px;"><img src="assets/img/logo.jpg" style="width: 100px;height: 90px;margin: 10px;"></div>
+                        <div class="col" style="line-height: 1.4em;">
+                            <div class="row">
+                                <div class="col"><span style="font-weight: 700;color: #1c374f;">Thương hiệu Bánh Canh Ông Đô</span></div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col">
+                                    <p style="font-size: 14px;color: rgb(140, 152, 158);;">Vốn bột tươi được sản xuất bằng công thức gia truyền. Nay Bánh Canh Ông Đô đã cải tiến và xây dựng
+                                    dây chuyền sản xuất bánh canh khô để người tiêu dùng có thể bảo quản tốt hơn. Mặc dù không sử dụng chất bảo quản hay chất tạo khô, nhưng Bánh Canh Ông Đô vẫn
+                                    đạt được độ dẻo và thơm sau khi được nấu chín. Hiện sản phẩm đang được sản xuất tại địa chỉ An Khê, Thanh Khê, Đà Nẵng</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div style="border-top: 1px solid #e46d3c;display: flex;">
-            <div style="max-width: 1150px;margin: auto;padding: 30px 0px;display: flex;">
-                <h1 class="d-xl-flex align-items-xl-center" style="color: #e46d3c;display: inline;">Liên hệ chúng tôi<i class="fa fa-caret-right d-xl-flex align-items-xl-center" style="padding: 0px 20px;color: #e46d3c;"></i></h1>
-                <div class="flex-column flex-sm-row" style="display: flex;"><a class="icon-footer" href="#"><span><i class="fa fa-facebook"></i></span></a><a class="icon-footer" href="#" style="background-color: #fff;margin-left: 20px;"><span><i class="fa fa-linkedin-square"></i></span></a><a class="icon-footer"
-                        href="#" style="background-color: #fff;margin-left: 20px;"><span><i class="fa fa-youtube-play"></i></span></a></div>
+            <div style="max-width: 1150px;margin: auto;padding: 30px;display: flex;">
+                <h1 class="d-xl-flex align-items-xl-center" style="color: #e46d3c;display: inline; align-self: center;">Liên hệ chúng tôi</h1>
+                <h1 class="d-xl-flex align-items-xl-center" style="color: #e46d3c;display: inline; align-self: center;"><i class="fa fa-caret-right d-xl-flex align-items-xl-center" style="padding: 0px 20px;color: #e46d3c;"></i></h1>
+                <div class="flex-column flex-sm-row" style="display: flex;">
+                    <a class="icon-footer" href="https://www.facebook.com/banhcanhongdo/" style="background-color: inherit;"><span><img src="assets/img/icon-fb.png" alt="Card image cap" style="width: 70px;"></span></a>
+                    <a class="icon-footer" href="https://www.facebook.com/banhcanhongdo/" style="margin-left: 20px; background-color: inherit;"><span><img src="assets/img/icon-yt.png" alt="Card image cap" style="width: 70px;"></span></a>
+                </div>
             </div>
         </div>
     </section>
@@ -80,35 +134,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h5 style="color: #FFFFFF;">Get started</h5>
+                    <img class="navbar-brand d-flex d-xl-flex col-2" src="assets/img/logo.jpg" style="max-width: fit-content;">
+                </div>
+                <div class="col-sm-3">
+                    <h5 style="color: #FFFFFF;">Về chúng tôi</h5>
                     <ul>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Home</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Sign up</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Downloads</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Thông tin doanh nghiệp</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Chi nhánh</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Tuyển dụng</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5 style="color: #FFFFFF;">About us</h5>
+                    <h5 style="color: #FFFFFF;">Hỗ trợ</h5>
                     <ul>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Company Information</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Contact us</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Reviews</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Giao hàng: 0348.172.729</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Phản hồi: 0706.169.969</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
-                    <h5 style="color: #FFFFFF;">Support</h5>
+                    <h5 style="color: #FFFFFF;">Giao hàng</h5>
                     <ul>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">FAQ</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Help desk</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Forums</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5 style="color: #FFFFFF;">Legal</h5>
-                    <ul>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Terms of Service</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Terms of Use</a></li>
-                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Privacy Policy</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Phương thức giao hàng</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Phương thức thanh toán</a></li>
+                        <li style="color: #ffffff;"><a href="#" style="color: #ffffff;">Đổi trả & đánh giá</a></li>
                     </ul>
                 </div>
             </div>
